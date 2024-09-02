@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+.theme-container{
+    background-color: #579BB1;
+
+}
+
+.night-mode .theme-container{
+    background-color: black;
+    transition: transform 200ms ease;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: transparent;
+    padding-left: 20px;
+    list-style: none;
+
+    ul {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.main {
+    margin: 1rem;
+    padding: 0;
+}
+
+a {
+    color: rgb(233, 233, 233);
+}
+
+
+
+a:hover {
+    color: white;
+}
+
+
+.logo {
+    height: 95px;
+    width: 95px;
+    border-radius: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.card {
+    background-color: #E1D7C6;
+    height: 300px;
+    width: 200px;
+    margin-right: 20px;
+    box-shadow: 0 2px 5px #9bb6d4;
+    border-radius: 5px;
+    position: relative;
+}
+
+.card img {
+    height: 300px;
+    width: 200px;
+    transition: all 200ms;
+}
+
+.card img:hover {
+    height: 305px;
+    width: 205px;
+    transition: all 200ms;
+}
+
+.div-cover:hover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    a {
+        color: white;
+        background-color: #242424;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+
+.div-cover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 300ms;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    a {
+        color: transparent;
+        transition: all 100ms;
+        font-weight: bolder;
+    }
+}
+
+.container-center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.slides-container {
+    height: calc(100vh - 500px);
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.slide-arrow {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 4rem;
+    background-color: white;
+    border: none;
+    width: 2rem;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms;
+}
+
+.slide-arrow:hover,
+.slide-arrow:focus {
+    opacity: 1;
+}
+
+#slide-arrow-prev {
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+#slide-arrow-next {
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 0 2rem 0 0 2rem;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+}
+
+#slide1 {
+    background-color: red;
+}
+
+#slide2 {
+    background: blue;
+}
+
+#slide3 {
+    background-color: yellow;
+}
+
+.genre-container {
+    background-color: rgb(65, 114, 155);
+    width: 100%;
+    /* height: 200px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 5px 5px;
+}
+
+.content-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+    width: 100%;
+    height: 50vh;
+}
+
+.content-slide img {
+    width: 999px;
+    height: 500px;
+}
+
+.genre-card {
+    font-family: "Edu VIC WA NT Beginner";
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    height: 80px;
+    width: 160px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #242424;
+    text-align: center;
+    color: #575757;
+    transition: all 300ms;
+}
+
+.genre-card:hover {
+    height: 100px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #F8F4EA;
+    margin: 0;
+    transition: all 300ms;
+}
+
+.most-rented {
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0;
+    box-shadow: 0 5px 5px #242424;
+    border-radius: 2px;
+}
+
+.most-rented-container {
+    width: 100%;
+    height: auto;
+    padding: 30px 50px;
+}
+
+.most-rented-card {
+    background-color: #9bb6d4;
+    color: #d3dfdf;
+    align-items: center;
+    height: 100px;
+    width: 200px;
+    border: #242424 1px solid;
+    margin: 5px;
+    display: flex;
+    padding: 2px;
+    font-size: 15px;
+    position: relative;
+    text-shadow: #242424 1px 1px;
+    font-family: "Alkatra", system-ui;
+    font-optical-sizing: auto;
+    font-weight: bold;
+}
+
+.most-rented-card img {
+    height: 90px;
+    width: 70px;
+    margin-right: 5px;
+    position: relative;
+}
+
+.item-list {
+    font-family: "Alkatra", system-ui;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    z-index: 10;
+    bottom: 36px;
+    color: rgb(187, 218, 13);
+    text-shadow: #242424 2px 2px;
+}
+
+.list-books {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    height: 8em;
+    background-color: transparent;
+
+}
+
+.theme-toggle-container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 2px;
+}
+
+.button-container {
+    height: 25px;
+    width: 80px;
+    background-color: #F8F4EA;
+    border-radius: 20px 20px ;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+
+    button{
+        border-radius: 100%;
+        height: 22px;
+        width: 22px;
+        background-color: #414141;
+        border: 2px solid black;
+        
+    }
+}
