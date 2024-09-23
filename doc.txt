@@ -1,3 +1,11 @@
 padrão de cores: https://colorhunt.co/palette/1926553876bfe1aa74f3f0ca modo noturno
 padrão de cores: https://colorhunt.co/palette/579bb1e1d7c6ece8ddf8f4ea modo claro
 navbar transparente
+
+próximas etapas de implementação
+administrador
+tela de sing in e sing up (modal) do administrador e do aluno
+get dos generos literarios
+metodos http dos livros (administrador)
+metodos http dos usuarios
+reserva do livro parte dos alunos

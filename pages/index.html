@@ -30,13 +30,32 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="livros.html">Livros</a></li>
                 <li><a href="#">Sugestões dos professores</a></li>
-                <li><a href="#">Área administrativa</a></li>
+                <li><a href="#" onclick="handleSignInModal()">Cadastrar</a></li>
             </ul>
         </nav>
         <div class="main">
+            <div class="modal-container">
+                <div class="modal-sign-in">
+                    <form action="" name="form" id="submit-form">
+                        <label for="">Nome de usuário</label>
+                        <input id="nome-formulario" type="text">
+                        <label for="">Crie sua senha</label>
+                        <input id="senha-formulario" type="text" type="password">
+                        <label for="">Confirme sua senha</label>
+                        <input id="confirmar-senha" type="text" type="password">
+                        <label for="">telefone</label>
+                        <input id="telefone-formulario" type="tel">
+                        <label for="">Email</label>
+                        <input id="email-formulario" type="email">
+                        <label for="">Endereço</label>
+                        <input id="endereco-formulario" type="text">
+                        <button onclick="submitForm(event)">Enviar</button>
+                    </form>
+                </div>
+            </div>
             <div class="theme-toggle-container">
-                <div class="button-container">
-                    <button id="btn" onclick="toggleTheme()"></button>
+                <div class="button-container"  onclick="toggleTheme()">
+                    <button id="btn"></button>
                 </div>
             </div>
             <section class="slider-wrapper">
@@ -172,6 +191,7 @@
             </div>
         </div>
         <footer></footer>
+        <script src="../script/api.js"></script>
         <script src="../script/script.js"></script>
         <script src="../script/slider.js"></script>
     </div>
