@@ -230,13 +230,14 @@ a:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: end;
-    width: 100%;
+    width: 50%;
     height: 50vh;
 }
 
 .content-slide img {
-    width: 999px;
-    height: 500px;
+    max-width: 999px;
+    max-height: 500px;
+    object-fit: cover;
 }
 
 .genre-card {
